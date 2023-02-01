@@ -1,0 +1,53 @@
+
+@media only screen and (max-width: 991.98px) {
+
+
+        .menu_items {
+            align-items: center;
+            justify-content: center;
+            margin-left: 0 !important;
+            position: fixed;
+            background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 95%);
+            flex-direction: column;
+            width: 50px;
+            // left: 0;
+            top: 0;
+            height: 50px;
+            z-index: 99;
+            right: 0;
+            border-radius: 0 0 0 100% ;
+            overflow: hidden;
+            transition: all .5s ease-out;
+            visibility: hidden;
+            box-shadow: 0 0 80px 5px rgb(95, 101, 134); 
+            li{
+                margin-top: 2rem;
+                padding-right: 0 !important;
+                opacity: 0;
+            }
+            &.show_menu {
+                height: 100vh;
+                overflow: auto;
+                width: 100vw;
+                border-radius: 0;
+                visibility: visible;
+                li{
+                    opacity: 1;
+                   
+                }
+            }
+        }
+        .signup_btns {
+            display: none !important;
+        }
+        .banner_main_image {
+            margin-top: 8rem;
+        }
+    }
+
+    @media only screen and (max-width: 575.98px) {
+    .mobile-container {
+        max-width: 97%;
+        margin: auto;
+      }
+    }
