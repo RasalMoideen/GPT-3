@@ -180,6 +180,104 @@ li {
   margin: 0px;
 }
 
+.pre_loader {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  background: radial-gradient(circle at 3% 25%, rgb(0, 57, 83) 0%, rgb(4, 12, 24) 95%);
+  z-index: 9999;
+}
+
+.fade-circle {
+  display: inline-block;
+  margin: 2.4rem;
+  outline: 0 none;
+  border-radius: 100%;
+  font-size: 1.2rem;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: fade-circle 1.5s infinite ease;
+          animation: fade-circle 1.5s infinite ease;
+}
+
+@-webkit-keyframes fade-circle {
+  0%, 100% {
+    -webkit-box-shadow: 0em -2em 0em 0em white, 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0.2), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), -2em 0em 0em 0em rgba(255, 255, 255, 0.6), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8);
+            box-shadow: 0em -2em 0em 0em white, 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0.2), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), -2em 0em 0em 0em rgba(255, 255, 255, 0.6), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8);
+  }
+  12.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.8), 1.4em -1.4em 0em 0em white, 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), -2em 0em 0em 0em rgba(255, 255, 255, 0.4), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.8), 1.4em -1.4em 0em 0em white, 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), -2em 0em 0em 0em rgba(255, 255, 255, 0.4), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6);
+  }
+  25% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.6), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8), 2em 0em 0em 0em white, 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0.2), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.6), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8), 2em 0em 0em 0em white, 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0.2), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4);
+  }
+  37.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.4), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6), 2em 0em 0em 0em rgba(255, 255, 255, 0.8), 1.4em 1.4em 0em 0em white, 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.4), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6), 2em 0em 0em 0em rgba(255, 255, 255, 0.8), 1.4em 1.4em 0em 0em white, 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.2), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4), 2em 0em 0em 0em rgba(255, 255, 255, 0.6), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), 0em 2em 0em 0em white, -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.2), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4), 2em 0em 0em 0em rgba(255, 255, 255, 0.6), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), 0em 2em 0em 0em white, -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+  }
+  62.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2), 2em 0em 0em 0em rgba(255, 255, 255, 0.4), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), 0em 2em 0em 0em rgba(255, 255, 255, 0.8), -1.4em 1.4em 0em 0em white, -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2), 2em 0em 0em 0em rgba(255, 255, 255, 0.4), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), 0em 2em 0em 0em rgba(255, 255, 255, 0.8), -1.4em 1.4em 0em 0em white, -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+  }
+  75% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0.2), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), 0em 2em 0em 0em rgba(255, 255, 255, 0.6), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), -2em 0em 0em 0em white, -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0.2), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), 0em 2em 0em 0em rgba(255, 255, 255, 0.6), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), -2em 0em 0em 0em white, -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+  }
+  87.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), 0em 2em 0em 0em rgba(255, 255, 255, 0.4), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), -2em 0em 0em 0em rgba(255, 255, 255, 0.8), -1.4em -1.4em 0em 0em white;
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), 0em 2em 0em 0em rgba(255, 255, 255, 0.4), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), -2em 0em 0em 0em rgba(255, 255, 255, 0.8), -1.4em -1.4em 0em 0em white;
+  }
+}
+
+@keyframes fade-circle {
+  0%, 100% {
+    -webkit-box-shadow: 0em -2em 0em 0em white, 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0.2), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), -2em 0em 0em 0em rgba(255, 255, 255, 0.6), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8);
+            box-shadow: 0em -2em 0em 0em white, 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0.2), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), -2em 0em 0em 0em rgba(255, 255, 255, 0.6), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8);
+  }
+  12.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.8), 1.4em -1.4em 0em 0em white, 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), -2em 0em 0em 0em rgba(255, 255, 255, 0.4), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.8), 1.4em -1.4em 0em 0em white, 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), -2em 0em 0em 0em rgba(255, 255, 255, 0.4), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6);
+  }
+  25% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.6), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8), 2em 0em 0em 0em white, 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0.2), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.6), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.8), 2em 0em 0em 0em white, 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0.2), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4);
+  }
+  37.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.4), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6), 2em 0em 0em 0em rgba(255, 255, 255, 0.8), 1.4em 1.4em 0em 0em white, 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.4), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.6), 2em 0em 0em 0em rgba(255, 255, 255, 0.8), 1.4em 1.4em 0em 0em white, 0em 2em 0em 0em rgba(255, 255, 255, 0), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.2), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4), 2em 0em 0em 0em rgba(255, 255, 255, 0.6), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), 0em 2em 0em 0em white, -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0.2), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.4), 2em 0em 0em 0em rgba(255, 255, 255, 0.6), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), 0em 2em 0em 0em white, -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0), -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+  }
+  62.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2), 2em 0em 0em 0em rgba(255, 255, 255, 0.4), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), 0em 2em 0em 0em rgba(255, 255, 255, 0.8), -1.4em 1.4em 0em 0em white, -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0.2), 2em 0em 0em 0em rgba(255, 255, 255, 0.4), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), 0em 2em 0em 0em rgba(255, 255, 255, 0.8), -1.4em 1.4em 0em 0em white, -2em 0em 0em 0em rgba(255, 255, 255, 0), -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+  }
+  75% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0.2), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), 0em 2em 0em 0em rgba(255, 255, 255, 0.6), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), -2em 0em 0em 0em white, -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0.2), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.4), 0em 2em 0em 0em rgba(255, 255, 255, 0.6), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.8), -2em 0em 0em 0em white, -1.4em -1.4em 0em 0em rgba(255, 255, 255, 0);
+  }
+  87.5% {
+    -webkit-box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), 0em 2em 0em 0em rgba(255, 255, 255, 0.4), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), -2em 0em 0em 0em rgba(255, 255, 255, 0.8), -1.4em -1.4em 0em 0em white;
+            box-shadow: 0em -2em 0em 0em rgba(255, 255, 255, 0), 1.4em -1.4em 0em 0em rgba(255, 255, 255, 0), 2em 0em 0em 0em rgba(255, 255, 255, 0), 1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.2), 0em 2em 0em 0em rgba(255, 255, 255, 0.4), -1.4em 1.4em 0em 0em rgba(255, 255, 255, 0.6), -2em 0em 0em 0em rgba(255, 255, 255, 0.8), -1.4em -1.4em 0em 0em white;
+  }
+}
 /**
 *******************************************************************************************************
 ***********************************************HEADER CSS**********************************************

@@ -94,6 +94,135 @@ li {
 //     width: 100%;
 //   }
 
+
+
+.pre_loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background:radial-gradient(circle at 3% 25%, rgb(0, 57, 83) 0%, rgba(4, 12, 24, 1) 95%);
+  z-index: 9999;
+}
+
+
+
+$animation-duration: 1.5s;
+ 
+.fade-circle {
+  display: inline-block;
+  margin: 2.4rem;
+  outline: 0 none;
+  border-radius: 100%;
+  font-size: 1.2rem;
+  width: 1em;
+  height: 1em;
+  animation: fade-circle $animation-duration infinite ease;
+}
+ 
+@keyframes fade-circle {
+  0%,
+  100% {
+    box-shadow: 0em -2em 0em 0em white,
+                1.4em -1.4em 0em 0em rgba(white, 0),
+                2em 0em 0em 0em rgba(white, 0),
+                1.4em 1.4em 0em 0em rgba(white, 0),
+                0em 2em 0em 0em rgba(white, 0.2),
+                -1.4em 1.4em 0em 0em rgba(white, 0.4),
+                -2em 0em 0em 0em rgba(white, 0.6),
+                -1.4em -1.4em 0em 0em rgba(white, 0.8);
+  }
+ 
+  12.5% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0.8),
+                1.4em -1.4em 0em 0em white,
+                2em 0em 0em 0em rgba(white, 0),
+                1.4em 1.4em 0em 0em rgba(white, 0),
+                0em 2em 0em 0em rgba(white, 0),
+                -1.4em 1.4em 0em 0em rgba(white, 0.2),
+                -2em 0em 0em 0em rgba(white, 0.4),
+                -1.4em -1.4em 0em 0em rgba(white, 0.6);
+  }
+ 
+  25% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0.6),
+                1.4em -1.4em 0em 0em rgba(white, 0.8),
+                2em 0em 0em 0em white,
+                1.4em 1.4em 0em 0em rgba(white, 0),
+                0em 2em 0em 0em rgba(white, 0),
+                -1.4em 1.4em 0em 0em rgba(white, 0),
+                -2em 0em 0em 0em rgba(white, 0.2),
+                -1.4em -1.4em 0em 0em rgba(white, 0.4);
+  }
+ 
+  37.5% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0.4),
+                1.4em -1.4em 0em 0em rgba(white, 0.6),
+                2em 0em 0em 0em rgba(white, 0.8),
+                1.4em 1.4em 0em 0em white,
+                0em 2em 0em 0em rgba(white, 0),
+                -1.4em 1.4em 0em 0em rgba(white, 0),
+                -2em 0em 0em 0em rgba(white, 0),
+                -1.4em -1.4em 0em 0em rgba(white, 0.2);
+  }
+ 
+  50% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0.2),
+                1.4em -1.4em 0em 0em rgba(white, 0.4),
+                2em 0em 0em 0em rgba(white, 0.6),
+                1.4em 1.4em 0em 0em rgba(white, 0.8),
+                0em 2em 0em 0em white,
+                -1.4em 1.4em 0em 0em rgba(white, 0),
+                -2em 0em 0em 0em rgba(white, 0),
+                -1.4em -1.4em 0em 0em rgba(white, 0);
+  }
+ 
+  62.5% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0),
+                1.4em -1.4em 0em 0em rgba(white, 0.2),
+                2em 0em 0em 0em rgba(white, 0.4),
+                1.4em 1.4em 0em 0em rgba(white, 0.6),
+                0em 2em 0em 0em rgba(white, 0.8),
+                -1.4em 1.4em 0em 0em white,
+                -2em 0em 0em 0em rgba(white, 0),
+                -1.4em -1.4em 0em 0em rgba(white, 0);
+  }
+ 
+  75% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0),
+                1.4em -1.4em 0em 0em rgba(white, 0),
+                2em 0em 0em 0em rgba(white, 0.2),
+                1.4em 1.4em 0em 0em rgba(white, 0.4),
+                0em 2em 0em 0em rgba(white, 0.6),
+                -1.4em 1.4em 0em 0em rgba(white, 0.8),
+                -2em 0em 0em 0em white,
+                -1.4em -1.4em 0em 0em rgba(white, 0);
+  }
+ 
+  87.5% {
+    box-shadow: 0em -2em 0em 0em rgba(white, 0),
+                1.4em -1.4em 0em 0em rgba(white, 0),
+                2em 0em 0em 0em rgba(white, 0),
+                1.4em 1.4em 0em 0em rgba(white, 0.2),
+                0em 2em 0em 0em rgba(white, 0.4),
+                -1.4em 1.4em 0em 0em rgba(white, 0.6),
+                -2em 0em 0em 0em rgba(white, 0.8),
+                -1.4em -1.4em 0em 0em white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /**
 *******************************************************************************************************
 ***********************************************HEADER CSS**********************************************

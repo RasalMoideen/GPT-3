@@ -6,3 +6,8 @@ function toggleFunction(){
 }
 
 
+
+let preloader = document.getElementById("pre_loader");
+function loadingFunction() {
+  preloader.style.display = "none";
+}
